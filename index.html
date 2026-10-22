@@ -35,10 +35,46 @@
     }
     a { color: #2563b9; }
     footer { text-align: center; padding: 25px; }
+    
+    /* Header Navigation */
+    .navbar {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+    
+    /* Navigation Buttons */
+    .nav-button {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #2563eb;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    
+    /* Button Hover Effect */
+    .nav-button:hover {
+      background-color: #1d4ed8;
+    }
+    
+    /* Keyboard Navigation */
+    .nav-button:focus-visible {
+      outline: 3px solid white;
+      outline-offset: 3px;
+    }
   </style>
 </head>
 <body>
   <header>
+    <nav class="navbar">
+      <a href="index.html" class="nav-button">Home</a>
+      <a href="projects.html" class="nav-button">Projects</a>
+    </nav>
     <h1>Jason Luis</h1>
     <p>Cloud Computing Student</p>
     <p>Building skills in Amazon Web Services, Python, and C++</p>
@@ -56,7 +92,11 @@
 
     <section>
       <h2>Technical Skills</h2>
-      <p>Python, C++, HTML5, CSS, AWS, Windows Server, Git, GitHub</p>
+      <p>
+        <strong>Cloud:</strong>AWS EC2, Amazon S3, Amazon VPC, IAM</p>
+      <p><strong>Systems & Networking:</strong>Linux, Ubuntu, Windows Server, SSH, DNS, VPN, WireGuard</p>
+      <p><strong>Programming & Web:</strong>Python, C++, HTML5, CSS, Bootstrap</p>
+      <p><strong>Tools:</strong>Git, GitHub, WordPress, Pi-hole</p>
     </section>
 
     <section>
@@ -78,8 +118,7 @@
         </div>
         <div class="project">
           <h3>Windows Server Labs</h3>
-          <p>Hands-on practice with users, networking, and firewalls.</p>
-          <a href="projects.html">View My Technical Projects</a> 
+          <p>Hands-on practice with users, networking, and firewalls.</p> 
         </div>
         <div class="project">
           <h3>AWS EC2 VPN & DNS Filtering</h3>
