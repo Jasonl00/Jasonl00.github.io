@@ -521,9 +521,23 @@ a:hover {
 }
 
 /* SVG logos appear white on dark backgrounds */
+
+/* GitHub logo */
 .social-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
   filter: invert(1);
 }
+
+/* LinkedIn logo with blue background */
+.linkedin-icon {
+  filter: invert(1);
+  background-color: #f5993d;
+  border-radius: 3px;
+  padding: 2px;
+}
+
 
 /* Align icons with text */
 .social-links {
