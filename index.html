@@ -1,59 +1,96 @@
-<!DOCTYPE html> 
-<html lang="en"> 
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset = "UTF-8">
-  <meta name ="viewport" content="width=device-width, initial-scale=1"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Jason Luis | Portfolio</title>
   <style>
     body {
-      font-family: Arial, sans-serif; 
-      margin: 0; 
-      background: #f4f7fb; 
-      color: #lc2938; 
-      line-height: 1.6; 
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f7fb;
+      color: #1c2938;
+      line-height: 1.6;
     }
-    Header {
-      backround: #14243b; 
-      color: white; 
-      padding: 65px 20px; 
-      text-align: center; 
+    header {
+      background: #14243b;
+      color: white;
+      padding: 65px 20px;
+      text-align: center;
     }
-    header p{
-      color: #d4e1f0; 
+    header p { color: #d4e1f0; }
+    main { max-width: 900px; margin: auto; padding: 25px; }
+    section { margin-bottom: 35px; }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 15px;
     }
-    main {
-      max-width: 900px; 
-      margin: auto; 
-      padding: 25px; 
+    .project {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px #00000012;
     }
-    section{
-      margin-bottom: 35px; 
-    }
-    .project{
-      background: white; 
-      padding: 20px; 
-      border-radius: 10px; 
-      box-shadow: 0 2px 8px #00000012; 
-    }
-    a {
-      color: #2563b9;
-    }
-    footer{
-      text-align: center; 
-      padding: 25px; 
-    }
+    a { color: #2563b9; }
+    footer { text-align: center; padding: 25px; }
   </style>
 </head>
 <body>
   <header>
-    <hl>Jason Luis</hl> 
-    <p>Cloud Computing Student</p> 
-    <p>Building Skills in Amazon Web Services, Python, HTML 5, CSS, and C++</p> 
-  </header> 
+    <h1>Jason Luis</h1>
+    <p>Cloud Computing Student</p>
+    <p>Building skills in Amazon Web Services, Python, and C++</p>
+  </header>
+
   <main>
     <section>
-      <h2>About me</h2>
-      <p>I'm a Cloud Computing student at Santa Monica College, interested in Cloud Engineering, IT Infrastructure, and Software Development.</p>
+      <h2>About Me</h2>
+      <p>
+        I'm a Cloud Computing student at Santa Monica College,
+        interested in Cloud Engineering, IT Infrastructure,
+        and Software Development.
+      </p>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <p>Python, C++, HTML5, CSS, AWS, Windows Server, Git, GitHub</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <h3>Python Menu Program</h3>
+          <p>Menu-driven program using loops and collections.</p>
+          <a href="https://github.com/Jasonl00/python-menu-program">
+            View Project
+          </a>
+        </div>
+        <div class="project">
+          <h3>Hotel Billing Program</h3>
+          <p>C++ application for calculating hotel expenses.</p>
+          <a href="https://github.com/Jasonl00">
+            View GitHub
+          </a>
+        </div>
+        <div class="project">
+          <h3>Windows Server Labs</h3>
+          <p>Hands-on practice with users, networking, and firewalls.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Contact</h2>
+      <a href="https://github.com/Jasonl00">GitHub</a> 
+      <a href="www.linkedin.com/in/jason-luis-2b6494253">Linkedin</a> 
+      <h2>Email: jluis.AV2018@gmail.com</h2>
     </section>
   </main>
+
+  <footer>© 2026 Jason Luis</footer>
 </body>
+</html>
