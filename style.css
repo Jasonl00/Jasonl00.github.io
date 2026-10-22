@@ -128,12 +128,31 @@ a:hover {
   padding: 90px 0 86px;
 }
 
+
+/* Introduction on left, snapshot on right */
 .hero-grid {
   display: grid;
   grid-template-columns: 1.45fr 0.75fr;
   gap: 50px;
   align-items: center;
 }
+
+/* Keep the Professional Snapshot styling unchanged */
+.profile-panel {
+  background: #ffffff0d;
+  border: 1px solid #ffffff29;
+  border-radius: 20px;
+  padding: 26px;
+  box-shadow: 0 18px 60px #0002;
+}
+
+/* Stack vertically only on smaller screens */
+@media (max-width: 800px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 .eyebrow {
   display: inline-block;
