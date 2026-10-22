@@ -19,3 +19,24 @@
   text-decoration: underline;
 }
 
+
+/* Social links with icons */
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+  filter: invert(1);
+}
