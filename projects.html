@@ -1,1 +1,477 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Cloud, networking, Linux, and programming projects by Jason Luis."><title>Projects | Jason Luis</title><link rel="stylesheet" href="style.css"></head><body><a class="skip-link" href="#main">Skip to content</a><header class="site-header"><div class="container header-inner"><a class="brand" href="index.html">Jason <span>Luis.</span></a><nav class="nav" aria-label="Main navigation"><a href="index.html">Home</a><a href="about.html">About Me</a><a href="projects.html" aria-current="page">Projects</a><a class="resume-nav" href="Jason_Luis_Resume_2026.pdf" target="_blank" rel="noopener noreferrer">Resume ↗</a></nav></div></header><main id="main"><section class="page-hero"><div class="container"><span class="eyebrow">Selected technical work</span><h1 class="page-title">Projects & Hands-On Labs</h1><p class="lead">A collection of cloud, systems, networking, and programming projects completed through coursework and independent practice.</p></div></section><section class="section"><div class="container"><div class="section-heading"><div><h2>Cloud & infrastructure</h2><p>Deploying services, configuring access, and understanding how cloud systems connect.</p></div></div><div class="grid-2"><article class="card project-card"><span class="project-number">Project 01 · AWS</span><h3>EC2 VPN & DNS Filtering Server</h3><p>Launched an Ubuntu instance on AWS EC2, installed Pi-hole for DNS filtering and PiVPN for WireGuard VPN access, configured connectivity, and tested a successful device connection.</p><div class="tags"><span class="tag">AWS EC2</span><span class="tag">Ubuntu</span><span class="tag">Pi-hole</span><span class="tag">PiVPN</span><span class="tag">WireGuard</span></div><div class="card-footer">Skills: server deployment, remote access, DNS, security groups</div></article><article class="card project-card"><span class="project-number">Project 02 · AWS</span><h3>VPC Network Configuration</h3><p>Configured an AWS virtual private cloud environment using public and private subnets, routing components, internet gateway connectivity, and EC2 security group rules.</p><div class="tags"><span class="tag">AWS VPC</span><span class="tag">Subnets</span><span class="tag">Route Tables</span><span class="tag">Security Groups</span></div><div class="card-footer">Skills: network design, routing, access controls</div></article><article class="card project-card"><span class="project-number">Project 03 · AWS</span><h3>Static Website Hosting with S3</h3><p>Published a static website using Amazon S3 and practiced configuring website hosting and access settings.</p><div class="tags"><span class="tag">Amazon S3</span><span class="tag">HTML</span><span class="tag">Bootstrap</span></div><div class="card-footer">Skills: cloud storage, website deployment</div></article><article class="card project-card"><span class="project-number">Project 04 · AWS</span><h3>WordPress on EC2</h3><p>Deployed a WordPress website on an AWS EC2 instance and verified access through the instance's public IP address.</p><div class="tags"><span class="tag">AWS EC2</span><span class="tag">WordPress</span><span class="tag">Web Hosting</span></div><div class="card-footer">Skills: instance setup, web service deployment</div></article></div></div></section><section class="section section-alt"><div class="container"><div class="section-heading"><div><h2>Systems & programming</h2><p>Building foundations in operating systems, administration, and application logic.</p></div></div><div class="grid-2"><article class="card project-card"><span class="project-number">Project 05 · Systems</span><h3>Windows Server Administration Labs</h3><p>Practiced account creation, network configuration inspection, firewall settings, updates, and common Windows Server administration tasks.</p><div class="tags"><span class="tag">Windows Server</span><span class="tag">CMD</span><span class="tag">Firewall</span></div><div class="card-footer">Skills: administration, diagnostics, access management</div></article><article class="card project-card"><span class="project-number">Project 06 · Programming</span><h3>Python & C++ Console Applications</h3><p>Developed small applications including a Python menu program and a C++ hotel billing program to practice logic, calculations, and user interaction.</p><div class="tags"><span class="tag">Python</span><span class="tag">C++</span><span class="tag">Console Applications</span></div><div class="card-footer">Skills: control flow, problem-solving, programming fundamentals</div></article></div></div></section><section class="section"><div class="container"><div class="callout"><div><h2>More code and future projects</h2><p>Visit my GitHub profile for repositories as I continue building my technical portfolio.</p></div><a class="btn btn-light" href="https://github.com/Jasonl00" target="_blank" rel="noopener noreferrer">Visit GitHub ↗</a></div></div></section></main><footer class="site-footer"><div class="container footer-inner"><span class="small">© <span id="year">2026</span> Jason Luis · Built with HTML & CSS</span><div class="social-links"><a href="https://github.com/Jasonl00" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/jason-luis-2b6494253" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div></footer><script>document.getElementById('year').textContent=new Date().getFullYear()</script></body></html>
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1"
+  >
+
+  <meta
+    name="description"
+    content="Cloud, networking, Linux, and programming projects by Jason Luis."
+  >
+
+  <title>Projects | Jason Luis</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ==========================================
+       ACCESSIBILITY
+       ========================================== -->
+
+  <a class="skip-link" href="#main">
+    Skip to content
+  </a>
+
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+       ========================================== -->
+
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a class="brand" href="index.html">
+        Jason <span>Luis</span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+
+        <a href="index.html">
+          Home
+        </a>
+
+        <a href="about.html">
+          About Me
+        </a>
+
+        <a href="projects.html" aria-current="page">
+          Projects
+        </a>
+
+        <a
+          class="resume-nav"
+          href="Jason_Luis_Resume_2026.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Resume ↗
+        </a>
+
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- ==========================================
+       MAIN CONTENT
+       ========================================== -->
+
+  <main id="main">
+
+    <!-- ==========================================
+         1. PROJECTS INTRODUCTION
+         ========================================== -->
+
+    <section class="page-hero">
+      <div class="container">
+
+        <span class="eyebrow">
+          Selected technical work
+        </span>
+
+        <h1 class="page-title">
+          Projects & Hands-On Labs
+        </h1>
+
+        <p class="lead">
+          A collection of cloud, systems, networking,
+          and programming projects completed through
+          coursework and independent practice.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         2. CLOUD & INFRASTRUCTURE PROJECTS
+         ========================================== -->
+
+    <section class="section">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+
+            <h2>Cloud & infrastructure</h2>
+
+            <p>
+              Deploying services, configuring access,
+              and understanding how cloud systems connect.
+            </p>
+
+          </div>
+        </div>
+
+
+        <div class="grid-2">
+
+          <!-- PROJECT 01: AWS EC2 VPN -->
+
+          <article class="card project-card">
+
+            <span class="project-number">
+              Project 01 · AWS
+            </span>
+
+            <h3>EC2 VPN & DNS Filtering Server</h3>
+
+            <p>
+              Launched an Ubuntu instance on AWS EC2,
+              installed Pi-hole for DNS filtering and
+              PiVPN for WireGuard VPN access, configured
+              connectivity, and tested a successful
+              device connection.
+            </p>
+
+            <div class="tags">
+              <span class="tag">AWS EC2</span>
+              <span class="tag">Ubuntu</span>
+              <span class="tag">Pi-hole</span>
+              <span class="tag">PiVPN</span>
+              <span class="tag">WireGuard</span>
+            </div>
+
+            <div class="card-footer">
+              Skills: server deployment, remote access,
+              DNS, security groups
+            </div>
+
+          </article>
+
+
+          <!-- PROJECT 02: AWS VPC -->
+
+          <article class="card project-card">
+
+            <span class="project-number">
+              Project 02 · AWS
+            </span>
+
+            <h3>VPC Network Configuration</h3>
+
+            <p>
+              Configured an AWS virtual private cloud
+              environment using public and private
+              subnets, routing components, internet
+              gateway connectivity, and EC2 security
+              group rules.
+            </p>
+
+            <div class="tags">
+              <span class="tag">AWS VPC</span>
+              <span class="tag">Subnets</span>
+              <span class="tag">Route Tables</span>
+              <span class="tag">Security Groups</span>
+            </div>
+
+            <div class="card-footer">
+              Skills: network design, routing,
+              access controls
+            </div>
+
+          </article>
+
+
+          <!-- PROJECT 03: AMAZON S3 -->
+
+          <article class="card project-card">
+
+            <span class="project-number">
+              Project 03 · AWS
+            </span>
+
+            <h3>Static Website Hosting with S3</h3>
+
+            <p>
+              Published a static website using Amazon S3
+              and practiced configuring website hosting
+              and access settings.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Amazon S3</span>
+              <span class="tag">HTML</span>
+              <span class="tag">Bootstrap</span>
+            </div>
+
+            <div class="card-footer">
+              Skills: cloud storage, website deployment
+            </div>
+
+          </article>
+
+
+          <!-- PROJECT 04: WORDPRESS -->
+
+          <article class="card project-card">
+
+            <span class="project-number">
+              Project 04 · AWS
+            </span>
+
+            <h3>WordPress on EC2</h3>
+
+            <p>
+              Deployed a WordPress website on an AWS EC2
+              instance and verified access through the
+              instance's public IP address.
+            </p>
+
+            <div class="tags">
+              <span class="tag">AWS EC2</span>
+              <span class="tag">WordPress</span>
+              <span class="tag">Web Hosting</span>
+            </div>
+
+            <div class="card-footer">
+              Skills: instance setup, web service deployment
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         3. SYSTEMS & PROGRAMMING PROJECTS
+         ========================================== -->
+
+    <section class="section section-alt">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+
+            <h2>Systems & programming</h2>
+
+            <p>
+              Building foundations in operating systems,
+              administration, and application logic.
+            </p>
+
+          </div>
+        </div>
+
+
+        <div class="grid-2">
+
+          <!-- PROJECT 05: WINDOWS SERVER -->
+
+          <article class="card project-card">
+
+            <span class="project-number">
+              Project 05 · Systems
+            </span>
+
+            <h3>Windows Server Administration Labs</h3>
+
+            <p>
+              Practiced account creation, network
+              configuration inspection, firewall
+              settings, updates, and common Windows
+              Server administration tasks.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Windows Server</span>
+              <span class="tag">CMD</span>
+              <span class="tag">Firewall</span>
+            </div>
+
+            <div class="card-footer">
+              Skills: administration, diagnostics,
+              access management
+            </div>
+
+          </article>
+
+
+          <!-- PROJECT 06: PROGRAMMING -->
+
+          <article class="card project-card">
+
+            <span class="project-number">
+              Project 06 · Programming
+            </span>
+
+            <h3>Python & C++ Console Applications</h3>
+
+            <p>
+              Developed small applications including
+              a Python menu program and a C++ hotel
+              billing program to practice logic,
+              calculations, and user interaction.
+            </p>
+
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">C++</span>
+              <span class="tag">Console Applications</span>
+            </div>
+
+            <div class="card-footer">
+              Skills: control flow, problem-solving,
+              programming fundamentals
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ==========================================
+         4. GITHUB CALLOUT
+         ========================================== -->
+
+    <section class="section">
+      <div class="container">
+
+        <div class="callout">
+
+          <div>
+
+            <h2>More code and future projects</h2>
+
+            <p>
+              Visit my GitHub profile for repositories
+              as I continue building my technical
+              portfolio.
+            </p>
+
+          </div>
+
+          <a
+            class="btn btn-light"
+            href="https://github.com/Jasonl00"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visit GitHub ↗
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ==========================================
+       5. FOOTER WITH SOCIAL ICONS
+       ========================================== -->
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+
+      <!-- COPYRIGHT -->
+
+      <span class="small">
+        © <span id="year">2026</span> Jason Luis
+        · Built with HTML & CSS
+      </span>
+
+
+      <!-- GITHUB & LINKEDIN -->
+
+      <div class="social-links">
+
+        <!-- GITHUB -->
+
+        <a
+          href="https://github.com/Jasonl00"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <img
+            src="https://cdn.jsdelivr.net/npm/simple-icons@v15/icons/github.svg"
+            alt=""
+            class="social-icon"
+            width="20"
+            height="20"
+          >
+
+          GitHub ↗
+
+        </a>
+
+
+        <!-- LINKEDIN -->
+
+        <a
+          href="https://www.linkedin.com/in/jason-luis-2b6494253"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <svg
+            class="linkedin-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            aria-hidden="true"
+          >
+
+            <rect
+              width="24"
+              height="24"
+              rx="3"
+              fill="#0A66C2"
+            />
+
+            <path
+              fill="#ffffff"
+              d="M5.2 9h2.8v9H5.2V9zm1.4-4.5a1.6 1.6 0 1 1 0 3.2 1.6 1.6 0 0 1 0-3.2zM9.7 9h2.7v1.2h.04c.38-.72 1.3-1.47 2.68-1.47 2.86 0 3.39 1.88 3.39 4.33V18h-2.8v-4.38c0-1.05-.02-2.4-1.46-2.4-1.47 0-1.7 1.14-1.7 2.32V18H9.7V9z"
+            />
+
+          </svg>
+
+          LinkedIn ↗
+
+        </a>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- ==========================================
+       AUTOMATIC COPYRIGHT YEAR
+       ========================================== -->
+
+  <script>
+    document.getElementById('year').textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
