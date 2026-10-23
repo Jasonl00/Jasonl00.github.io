@@ -129,13 +129,22 @@ a:hover {
 }
 
 
-/* Introduction on left, snapshot on right */
+
+/* Introduction left, Professional Snapshot right */
 .hero-grid {
   display: grid;
   grid-template-columns: 1.45fr 0.75fr;
   gap: 50px;
   align-items: center;
 }
+
+/* Mobile layout */
+@media (max-width: 800px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 /* Keep the Professional Snapshot styling unchanged */
 .profile-panel {
