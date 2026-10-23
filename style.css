@@ -549,13 +549,26 @@ a:hover {
   filter: invert(1);
 }
 
-/* LinkedIn logo with blue background */
+/* ==========================================
+   LINKEDIN ICON - TOP & FOOTER
+   ========================================== */
+
 .linkedin-icon {
-  filter: invert(1);
-  background-color: #f5993d;
-  border-radius: 3px;
-  padding: 2px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  flex-shrink: 0;
 }
+
+/* Align social icons and text */
+.hero-socials a,
+.site-footer .social-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
 
 
 /* Align icons with text */
